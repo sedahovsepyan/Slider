@@ -1,61 +1,100 @@
 
 .slider{
-    width:80%;
-    max-width:900px;
-    height:281px;
-    margin: 50px auto;
+    width:100%;
+    max-width:100%;
+
     position:relative;
 }
 .slider-2 {
-    width:80%;
-    max-width:900px;
-    height:281.25px;
+    width:100%;
+    max-width:100%;
     margin: 50px auto;
     position:relative;
 }
 img{
-    width: 80%;
+    width: 90%;
+    border: 2px solid white;
+    margin-left: 3%;
+    position:relative;
+    height: 600px;
 }
 
 .slides-wrapper li{
     display: table;
     background-color: #fff;
     width: 100%;
+    position:relative
 }
 .ul-slides li {
     display: table;
     background-color: #fff;
     width: 100%;
 }
-.slides-wrapper span{
+.slides-wrapper span {
     display: table-cell;
-    vertical-align:middle;
-    text-align:center;
-    font-size:2em;
+    vertical-align: middle;
+    font-size: 2em;
+    background-color: cadetblue;
 }
 .ul-slides span {
     display: table-cell;
     vertical-align:middle;
     text-align:center;
     font-size:2em;
-}
-
-.slider-nav {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    background-color: cadetblue;
 }
 .slider-nav li {
-    display:inline-block;
-    font-size:2em;
-    padding: 10px;
-    cursor:pointer;
-    color: #fff;
+    display: inline-block;
+    font-size: 6em;
+    cursor: pointer;
+    color: #262b2b;
+}
+.sl-prev{
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-100%);
+    position: absolute;
+    left: 0;
+}
+.sl-next{
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-100%);
+    position: absolute;
+    right: 0;
+
+}
+.main{
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
 }
 
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
 
+.active, .dot:hover {
+    background-color: #717171;
+}
 
+@media(max-width: 1600px){
+    img{
+        margin-left: 2%;
+    }
+}
+@media(max-width: 992px){
+    img{
+        margin-left: 0;
+    }
+}
 
 
 
